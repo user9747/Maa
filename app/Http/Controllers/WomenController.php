@@ -27,6 +27,7 @@ class WomenController extends Controller
         $woman->flag = 0;
         $woman->preg_no = $request['pregno'];
         $days = date_diff($woman->due_date,date("Y-m-d"));
+        $women->days = $days;
 
     }
 }
