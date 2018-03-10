@@ -1,7 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>Create Reminder</h1>
+<link rel='stylesheet' href={{URL::to('css/loginreg.css')}}>
+<link rel='stylesheet' href={{URL::to('css/posts.css')}}>
+<div class="container postc">
+    <div class="row">
+     @include('navwoman')
+     <div class="col-md-6 postarea col-sm-8 col-xs-8" >
+<h1 class="panel-heading">
+Create Reminder</h1>
 <form class="form-horizontal" method="POST" action="{{ route('create_reminder') }}">
     {{ csrf_field() }}
     <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
@@ -52,5 +59,5 @@
         </div>
     </div>
 
-</form>
+</form></div></div>
 @endsection()

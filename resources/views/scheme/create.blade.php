@@ -1,14 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>Create Post</h1>
+<link rel='stylesheet' href={{URL::to('css/loginreg.css')}}>
+<div class="container postc">
+    <div class="row">
+     @include('navwoman')
+     <div class="col-md-6 postarea col-sm-8 col-xs-8" >
+       
+<h1 class="panel-heading">
+Create Scheme</h1>
 <form class="form-horizontal" method="POST" action="{{ route('create_scheme') }}">
     {{ csrf_field() }}
     <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
         <label for="title" class="col-md-4 control-label">Title</label>
 
         <div class="col-md-6">
-            <input id="title" type="text" class="form-control" name="title" placeholder="Enter Scheme title" value="{{ old('title') }}" required autofocus>
+            <input id="title" type="text" class="form-control posttext" name="title" placeholder="Enter Scheme title" value="{{ old('title') }}" required autofocus>
 
             @if ($errors->has('title'))
                 <span class="help-block">
@@ -21,7 +28,7 @@
         <label for="body" class="col-md-4 control-label">Body</label>
 
         <div class="col-md-6">
-        <textarea id="body" name="body" rows="10" cols="70" placeholder="Enter description" required autofocus></textarea>
+        <textarea id="body" class="posttext" name="body" rows="5" cols="70" placeholder="Enter description" required autofocus></textarea>
 
             @if ($errors->has('body'))
                 <span class="help-block">
@@ -38,5 +45,5 @@
         </div>
     </div>
 
-</form>
+</form></div></div></div>
 @endsection()

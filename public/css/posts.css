@@ -33,6 +33,27 @@ font-family:'Berkshire Swash';
 	color:#816a77;
 	font-size:20px;
 }
+.cardo{
+	font-family:'Berkshire Swash';
+	color:#816a77;
+	font-size:20px;
+	background-color: white;
+	border-radius: 4px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+.theday{
+	font-family:'Berkshire Swash';
+	color:#0e7f76;
+	font-size:120px;
+	font-weight:400;
+	margin-top: 0px;
+	line-height: 90px;
+
+}
 
 @media (max-width: 480px) {
 	.forh{

@@ -52,6 +52,9 @@ body{
 .postarea{
 	padding-left:50px;
 }
+.box{
+	margin-top: 20px;
+}
 @media (max-width: 480px) {
 	.momm{
 		margin-top: 20px;

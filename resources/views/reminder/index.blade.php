@@ -1,25 +1,28 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<link rel='stylesheet' href={{URL::to('css/posts.css')}}>
+<div class="container postc">
     <div class="row">
-        <div class="col-md-2 col-md-offset-2">
-            <a class="btn btn-success" href="/reminder/create">Add Reminder</a>
-        </div>
-    </div>
+     @include('navwoman')
+
+        
+            <a class="btn btn-success pull-right" href="/reminder/create" style="margin-top: 20px;">Add Reminder</a>
+      
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
         <h1>Reminders</h1>
+
+             <div class="row">
+               
             @if(count($reminders) > 0)
                 @foreach($reminders as $reminder)
-                    <div class = "well">
-                        <div class="row">
-                            <div class="col-md-8 col-xs-8">
+                 <div class="col-md-3 cardo">
+                   
                                 <h1><a href="/reminder/{{$reminder->id}}">{{$reminder->title}}</a></h1>
-                                <small>Created on {{$reminder->created_at}} by {{$reminder->user->name}}</small>
+                               
                             </div>       
-                        </div>     
-                    </div>
+                       
                 @endforeach
             @else
                 <p>No reminders found</p>

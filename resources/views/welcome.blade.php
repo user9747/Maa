@@ -17,7 +17,7 @@
     <div class="jumbotron text-center">
 		<img src="{{ asset('img/maalogo.png') }}" class="img-responsive logop">
         <h4 class="apptitle">Project Maa.</h4>
-<!--<iframe src="https://www.ustream.tv/embed/23548463?html5ui" style="border: 0 none transparent;"  webkitallowfullscreen allowfullscreen frameborder="no" width="480" height="270"></iframe>-->
+
 		<a href="register">  <button type="button" class="bton">Sign Up</button></a><br>
 		<a href="login">  <button type="button" class="bton">Sign In</button></a>
 	</div>
