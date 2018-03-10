@@ -24,7 +24,6 @@ class WomenController extends Controller
             'date_of_birth' => 'required',
             'due_date' => 'required'
         ]);
-        
         $woman = new women;
         $user = Auth::user();
         $woman->email = $user->email;
@@ -36,11 +35,13 @@ class WomenController extends Controller
         $now = new \DateTime();
         $days = date_diff($due_date, $now);
         $woman->days = $days->days;
-        $woman->rate = 30;
+
+
+        $woman->rate = $rate;
         $woman->save();
         return redirect("wdashboard");
-
     }
+
     public function dashboard(){
         $woman = women::where('email','=',Auth::user()->email)->first();
         
