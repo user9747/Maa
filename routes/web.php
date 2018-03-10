@@ -34,3 +34,9 @@ Route::get('/scheme/create', function () {
 });
 Route::post('/scheme/create', 'SchemeController@store')->name('create_scheme');
 Route::get('/scheme/{scheme_id}','SchemeController@show');
+Route::get('/meetup','MeetUpController@index');
+Route::get('/meetup/create', function () {
+    return view('meetups.create');
+});
+Route::post('/meetup/create', 'MeetUpController@store')->name('create_meetup');
+Route::get('/meetup/{meetup_id}','MeetUpController@show');
