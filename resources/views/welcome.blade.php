@@ -6,6 +6,7 @@
 <link rel='stylesheet' href={{URL::to('css/style1.css')}}>
 
 
+
 <div class="container-fluid">
     <div class="jumbotron text-center">
 		<img src="{{ asset('img/maalogo.png') }}" class="img-responsive logop">
@@ -15,5 +16,6 @@
 		<a href="signin">  <button type="button" class="bton">Sign In</button></a>
 	</div>
 </div>
+
 
 @endsection
