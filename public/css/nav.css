@@ -20,6 +20,14 @@ body{
 	font-size:20px;
 	height:60px;
 	margin-bottom: 0px;
+
+}
+.dropdown{
+	background-color: white;
+}
+.dropdown-menu{
+	background-color: white;
+
 }
 @media (max-width: 1025px) {
 	.navbar{

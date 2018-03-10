@@ -8,7 +8,7 @@
      @include('navwoman')
 
         <div class="col-md-8 col-md-offset-1 postarea col-sm-8 col-xs-8">
-            <a class="btn btn-success" href="/forum/create">Add Post</a>
+            <a class="btn btn-primary" style="float:right;" href="/forum/create">Add Post</a>
         <h1 class="forh">Forum</h1>
             @if(count($posts) > 0)
                 @foreach($posts as $post)

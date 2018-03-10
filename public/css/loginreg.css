@@ -35,6 +35,23 @@ body{
 	margin-top: 50px;
 
 }
+.posttext{
+	width:80%;
+}
+.control-label{
+	font-weight:400;
+	font-family:'Berkshire Swash';
+    font-size:15px;
+
+}
+.yogapic{
+	height:40vh;
+	margin: auto;
+	margin-top: 40px;
+}
+.postarea{
+	padding-left:50px;
+}
 @media (max-width: 480px) {
 	.momm{
 		margin-top: 20px;
@@ -44,4 +61,14 @@ body{
 	width:50%;
 	margin-top: 20px;
 }
+.posttext{
+	width:80%;
+	
+}
+.postarea{
+	padding-left: 40px;
+}
+.yogapic{
+	display: none;
+	}
 }
