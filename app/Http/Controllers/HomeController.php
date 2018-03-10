@@ -34,8 +34,14 @@ class HomeController extends Controller
                 return redirect("women_details");
             else
                 return redirect("wdashboard");
+        elseif ($currentUser->usertype == "org") {
+           return redirect("orgdashboard");
+        }
+        elseif($currentUser->usertype == "doctor"){
+          return redirect("docterdashboard")
+        }
         else
         return view('home');
     }
-    
+
 }
