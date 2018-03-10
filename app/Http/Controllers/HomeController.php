@@ -37,9 +37,5 @@ class HomeController extends Controller
         else
         return view('home');
     }
-    public function scheme(){
-      $schemes = scheme::orderBy('id','DESC');
-      return view('schemes')->with('schemes',$schemes);
-
-    }
+    
 }

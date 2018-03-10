@@ -10,13 +10,13 @@
                     <div class = "well">
                         <div class="row">
                             <div class="col-md-8 col-xs-8">
-                                <h1><a href="/schemes/{{$scheme->id}}">{{$scheme->title}}</a></h1>
+                                <h1><a href="/scheme/{{$scheme->id}}">{{$scheme->title}}</a></h1>
                                 <small>Created on {{$scheme->created_at}}</small>
                             </div>
                         </div>
                     </div>
                 @endforeach
-                {{-- {{$scheme->links()}} --}}
+                {{$schemes->links()}}
             @else
                 <p>No schemes found</p>
             @endif
