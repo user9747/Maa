@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use App\women;
+use App\weekmsg;
 
 class WomenController extends Controller
 {
@@ -56,6 +57,9 @@ class WomenController extends Controller
 
     public function dashboard(){
         $woman = women::where('email','=',Auth::user()->email)->first();
-        return view("women_dashboard")->with('woman',$woman);
+        // $week = weekmsg::all();
+
+        $week = weekmsg::where('week','=',40-(int)($woman->days/7))->first();
+        return view("women_dashboard")->with('woman',$woman)->with('week',$week);
     }
 }
