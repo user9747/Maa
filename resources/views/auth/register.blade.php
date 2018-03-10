@@ -1,12 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
+<link href="{{ asset('css/loginreg.css') }}" rel="stylesheet">
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Register</div>
-
+                 <div class="row">
+                    <div class="col-md-4">
+                        <img src="{{ asset('img/mom2.png') }}" class="img-responsive mrmm">
+                    </div>
+                <div class="col-md-8">
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
@@ -65,9 +70,9 @@
                             <label for="usertype" class="col-md-4 control-label">Who are you?</label>
 
                             <div class="col-md-6">
-                                <input id="usertype" type="radio" class="form-control" name="usertype" value="woman" required autofocus>Woman<br/>
-                                <input id="usertype" type="radio" class="form-control" name="usertype" value="org" required autofocus>Organisation<br />
-                                <input id="usertype" type="radio" class="form-control" name="usertype" value="doctor" required autofocus>Doctor<br />
+                                <input id="usertype" type="radio" class="la" name="usertype" value="woman" required autofocus>&nbsp Woman<br/>
+                                <input id="usertype" type="radio" class="la" name="usertype" value="org" required autofocus>&nbsp Organisation<br />
+                                <input id="usertype" type="radio" class="la" name="usertype" value="doctor" required autofocus>&nbsp Doctor<br />
 
                                 @if ($errors->has('usertype'))
                                     <span class="help-block">
@@ -99,7 +104,7 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </div></div></div>
             </div>
         </div>
     </div>

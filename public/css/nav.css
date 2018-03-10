@@ -1,0 +1,27 @@
+.navname{
+	font-family:'Sacramento';
+	color:#816a77;
+	font-size:25px;
+	font-weight: 1000;
+}
+.navpic{
+	height:7vh;
+	margin-top: -5px;
+	margin-left: -40px;
+}
+body{
+	background-color: #a0ddd8;
+}
+.navbar{
+	border-width: 0px;
+	font-weight:400;
+	font-family:'Berkshire Swash';
+	color:#816a77;
+	font-size:20px;
+	height:60px;
+}
+@media (max-width: 480px) {
+	.navpic{
+		margin-left: 0px;
+	}
+}

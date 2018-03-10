@@ -9,9 +9,13 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
+    <link rel="icon" href="{{ asset('img/maafav.png') }}">
+     <link href="https://fonts.googleapis.com/css?family=Dosis|Sacramento" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/nav.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -28,8 +32,10 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+
+                    <a class="navbar-brand navname" href="{{ url('/') }}">
+
+                         <img src="{{ asset('img/logotext.png') }}" class="navpic">
                     </a>
                 </div>
 
@@ -41,7 +47,6 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
-                        <!-- Authentication Links -->
                         @guest
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
@@ -66,7 +71,7 @@
                                 </ul>
                             </li>
                         @endguest
-                    </ul>
+                    </ul> 
                 </div>
             </div>
         </nav>
