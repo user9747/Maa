@@ -32,7 +32,7 @@ class HomeController extends Controller
             if($womanUser == null)
                 return redirect("women_details");
             else
-                return redirect("women_home");
+                return redirect("wdashboard");
         else
         return view('home');
     }

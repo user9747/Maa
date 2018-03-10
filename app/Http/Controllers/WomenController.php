@@ -9,6 +9,11 @@ use App\women;
 class WomenController extends Controller
 {
     //
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index(){
         return view('home');
     }
@@ -33,9 +38,11 @@ class WomenController extends Controller
         $woman->days = $days->days;
         $woman->rate = 30;
         $woman->save();
-        return(
-            "Success"
-        );
+        return redirect("wdashboard");
 
+    }
+    public function dashboard(){
+        $woman = women::where('email','=',Auth::user()->email)->first();
+        return view("women_dashboard")->with('woman',$woman);
     }
 }
