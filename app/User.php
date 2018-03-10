@@ -30,5 +30,9 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Post');
     }
+    public function reminder()
+    {
+        return $this->hasMany('App\Reminder');
+    }
 
 }

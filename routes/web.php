@@ -40,3 +40,9 @@ Route::get('/meetup/create', function () {
 });
 Route::post('/meetup/create', 'MeetUpController@store')->name('create_meetup');
 Route::get('/meetup/{meetup_id}','MeetUpController@show');
+Route::get('/scheme','HomeController@scheme');
+
+Route::get('/reminder','ReminderController@index');
+Route::get('/reminder/create', 'ReminderController@create');
+Route::post('/reminder/create', 'ReminderController@store')->name('create_reminder');
+Route::get('/reminder/{post}','ReminderController@show');
