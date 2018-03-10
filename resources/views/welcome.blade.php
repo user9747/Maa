@@ -6,7 +6,11 @@
 <link rel='stylesheet' href={{URL::to('css/style1.css')}}>
 
 <div class="row full">
-    <div class="col-md-6"></div>
+    <div class="col-md-6">
+        <h2 class="vent">A venture to help out<br> all the gonna-be moms.</h2>
+        <p class="weldesc">Welcome to the start of your bump-tastic pregnancy journey! 
+        We at Project Maa are here to help you out through all the bumps and downs.</p>
+    </div>
     <div class="col-md-6">
 
 <div class="container-fluid">

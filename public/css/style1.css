@@ -3,25 +3,30 @@ html,body{
     padding: 0;
     margin-left: 0;
     margin-right: 0;
+
 }
 body{
 	background-color: #FEE8F4;
+	
 	
 }
 .bton{
 	background-color: #a0ddd8;
 	border-radius:0px;
 	border-width:0px;
-	color:black;
+	
 	padding:8px;
 	margin-bottom: 10px;
-	font-family: 'Dosis';
+	font-family:'Berkshire Swash';
+	color:#816a77;
+	font-size:15px;
 
 }
 .jumbotron{
 	background-color:white;
 	
 	margin-top:20px;
+
 }
 .logop{
 	height:50vh;margin: auto;
@@ -34,5 +39,36 @@ body{
 }
 .full{
 	max-width: 100%;
+
+}
+.vent{
+	font-weight:2000;
+	font-family:'Berkshire Swash';
+	color:#816a77;
+	font-size:50px;
+	margin-left: 50px;
+	margin-top: 140px;
+
+}
+.weldesc{
+	margin-left: 50px;
+	font-family:'Berkshire Swash';
+	color:#816a77;
+	font-size:25px;
+
+}
+@media (max-width: 480px) {
+	.vent{
+		margin-top: 50px;
+		font-size:30px;
+		margin-left: 20px;
+	}
+	.weldesc{
+		font-size: 18px;
+		margin-left: 20px;
+	}
+	.row{
+		margin: 0px;
+	}
 
 }

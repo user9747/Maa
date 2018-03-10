@@ -11,6 +11,7 @@
 	<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 	<link rel='stylesheet' href={{URL::to('src/css/font.css')}}>
    <link href="https://fonts.googleapis.com/css?family=Dosis|Sacramento" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
 </head>
 <body>
 	@yield('content')
