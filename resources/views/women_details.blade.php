@@ -19,6 +19,7 @@
                                         <strong>{{ $errors->first('pregno') }}</strong>
                                     </span>
                                 @endif
+                                
                             </div>
                         </div>
                         <div class="form-group{{ $errors->has('date_of_birth') ? ' has-error' : '' }}">

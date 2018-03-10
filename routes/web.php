@@ -22,4 +22,9 @@ Route::get('/women_details', function () {
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/stream', 'HomeController@index')->name('stream');
+<<<<<<< fd30a8006a56a58223123ab5f1c523831cd9d823
 Route::post('/women_update','WomenController@update')->name('women_update');
+=======
+Route::post('/women_update','WomenController@update')->name('stream');
+Route::get('/wdashboard', 'WomenController@dashboard')->name('wdashboard');
+>>>>>>> something
