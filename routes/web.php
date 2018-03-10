@@ -22,7 +22,7 @@ Route::get('/women_details', function () {
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/stream', 'HomeController@index')->name('stream');
-Route::post('/women_update','WomenController@update')->name('stream');
+Route::post('/women_update','WomenController@update')->name('women_update');
 Route::get('/wdashboard', 'WomenController@dashboard')->name('wdashboard');
 Route::get('/forum','PostController@index')->name('forum');
 Route::get('/forum/create', 'PostController@create');

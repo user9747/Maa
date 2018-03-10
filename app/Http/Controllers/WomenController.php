@@ -35,7 +35,19 @@ class WomenController extends Controller
         $now = new \DateTime();
         $days = date_diff($due_date, $now);
         $woman->days = $days->days;
-
+        if(($days->days<=252) && ($days->days > 84)){
+          $stage=1;
+          $rate = 30;
+        }
+        elseif (($days->days <= 84) && ($days->days >28))
+        {
+          $stage = 2;
+          $rate = 15;
+        }
+        else {
+          $stage = 3;
+          $rate = 7;
+        }
 
         $woman->rate = $rate;
         $woman->save();
@@ -44,7 +56,6 @@ class WomenController extends Controller
 
     public function dashboard(){
         $woman = women::where('email','=',Auth::user()->email)->first();
-        
         return view("women_dashboard")->with('woman',$woman);
     }
 }
