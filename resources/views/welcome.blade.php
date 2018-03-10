@@ -1,14 +1,16 @@
 @extends('master')
 
-@section('title', 'Renegade')
+@section('title', 'Project Maa')
 
 @section('content')
-<link rel='stylesheet' href={{URL::to('src/css/welcome.css')}}>
+<link rel='stylesheet' href={{URL::to('css/style1.css')}}>
 
-<div class="row">
-	<div class="col-md-12">
-		<img src={{URL::to('src/img/logo.jpeg')}} class="img-responsive" align="center">
-		<h1>Renegade</h1>
+
+<div class="container-fluid">
+    <div class="jumbotron text-center">
+		<img src="{{ asset('img/maalogo.png') }}" class="img-responsive logop">
+        <h4 class="apptitle">Project Maa.</h4>
+		
 		<a href="signup">  <button type="button" class="bton">Sign Up</button></a><br>
 		<a href="signin">  <button type="button" class="bton">Sign In</button></a>
 	</div>
