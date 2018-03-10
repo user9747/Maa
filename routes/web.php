@@ -16,6 +16,9 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::get('/women_details', function () {
+    return view('women_details');
+});
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/stream', 'HomeController@index')->name('stream');

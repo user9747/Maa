@@ -17,6 +17,8 @@ class CreateWomensTable extends Migration
             $table->increments('user_id');
             $table->string('email');
             $table->dateTime('due_date');
+            $table->dateTime('date_of_birth');
+            $table->integer('preg_no');
             $table->integer('days');
             $table->integer('flag');
             $table->integer('rate');

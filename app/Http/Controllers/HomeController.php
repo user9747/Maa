@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\women;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -25,7 +26,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $currentUser = $auth->user();
+        $currentUser = Auth::user();
         $womanUser = women::where('email' ,'=' , $currentUser->email)->first();
         if($currentUser->usertype == "woman")
             if($womanUser == null)
