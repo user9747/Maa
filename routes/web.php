@@ -28,3 +28,4 @@ Route::get('/forum','PostController@index')->name('forum');
 Route::get('/forum/create', 'PostController@create');
 Route::post('/forum/create', 'PostController@store')->name('create_post');
 Route::get('/forum/{post}','PostController@show');
+Route::get('/scheme','HomeController@scheme');

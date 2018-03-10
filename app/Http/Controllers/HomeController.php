@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\women;
+use App\scheme;
 use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
@@ -35,5 +36,10 @@ class HomeController extends Controller
                 return redirect("wdashboard");
         else
         return view('home');
+    }
+    public function scheme(){
+      $schemes = scheme::orderBy('id','DESC');
+      return view('schemes')->with('schemes',$schemes);
+
     }
 }
