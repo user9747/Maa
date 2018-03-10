@@ -1,5 +1,5 @@
 <?php
-use Auth;
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
