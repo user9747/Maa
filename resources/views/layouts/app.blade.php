@@ -10,6 +10,7 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
     <link rel="icon" href="{{ asset('img/maafav.png') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
      <link href="https://fonts.googleapis.com/css?family=Dosis|Sacramento" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
 
@@ -41,9 +42,9 @@
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
+                   <!--  <ul class="nav navbar-nav">
                         &nbsp;
-                    </ul>
+                    </ul> -->
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">

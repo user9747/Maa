@@ -19,8 +19,29 @@ body{
 	color:#816a77;
 	font-size:20px;
 	height:60px;
+	margin-bottom: 0px;
 }
+@media (max-width: 1025px) {
+	.navbar{
+		height: 110px;
+	}
+	.navpic{
+		margin-left: 0px;
+		height:5vh;
+	}
+}
+@media (max-width: 768px) {
+	.navbar{
+		height: 90px;
+	}
+	.navpic{
+		margin-left: 0px;
+	}
+} 
 @media (max-width: 480px) {
+	.navbar{
+		height: 60px;
+	}
 	.navpic{
 		margin-left: 0px;
 	}

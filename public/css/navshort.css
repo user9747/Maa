@@ -1,0 +1,32 @@
+  .left{
+  	height:92vh;
+   background-color: white;
+
+}
+.sidenav{
+	padding: 0px;
+	border-width: 8px;
+	border-color:red; 
+	padding-top: 15px;
+}
+.sidenav li{
+	
+	padding: 20px;
+	text-align: center;
+	font-weight:400;
+	font-family:'Berkshire Swash';
+	color:#816a77;
+	font-size:20px;
+}
+.postc{
+	margin-left: 0px;
+}
+.left{
+	padding: 0px;
+}
+
+@media (max-width: 480px) {
+	.sidenav li{
+		font-size:14px;
+	}
+}

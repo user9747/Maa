@@ -1,15 +1,24 @@
+@extends('layouts.app')
+
+@section('title', 'Project Maa')
+@section('content')
+<link rel='stylesheet' href={{URL::to('css/loginreg.css')}}>
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Fill in</div>
-
+                 <div class="row">
+                    <div class="col-md-4">
+                        <img src="{{ asset('img/mom3.png') }}" class="img-responsive mrmm">
+                    </div>
+                <div class="col-md-8">
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('women_update') }}">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('pregno') ? ' has-error' : '' }}">
-                            <label for="pregno" class="col-md-4 control-label">preg no</label>
+                            <label for="pregno" class="col-md-4 control-label">No. of children you've had</label>
 
                             <div class="col-md-6">
                                 <input id="pregno" type="text" class="form-control" name="pregno" value="{{ old('pregno') }}" required autofocus>
@@ -35,7 +44,7 @@
                             </div>
                         </div>
                         <div class="form-group{{ $errors->has('due_date') ? ' has-error' : '' }}">
-                            <label for="due_date" class="col-md-4 control-label"> Date Of Birth</label>
+                            <label for="due_date" class="col-md-4 control-label"> Delivery Due Date</label>
 
                             <div class="col-md-6">
                                 <input id="due_date" type="date" class="form-control" name="due_date" value="{{ old('due_date') }}" required autofocus>
@@ -62,3 +71,4 @@
         </div>
     </div>
 </div>
+@endsection
