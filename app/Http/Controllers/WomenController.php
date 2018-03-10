@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Storage\Facades\Auth;
+use Auth;
 use App\women;
 
 class WomenController extends Controller
@@ -21,13 +21,21 @@ class WomenController extends Controller
         ]);
         
         $woman = new women;
-        $woman->email = Auth::user()->email;
+        $user = Auth::user();
+        $woman->email = $user->email;
         $woman->due_date = $request['due_date'];
         $woman->date_of_birth = $request['date_of_birth'];
         $woman->flag = 0;
         $woman->preg_no = $request['pregno'];
-        $days = date_diff($woman->due_date,date("Y-m-d"));
-        $women->days = $days;
+        $due_date = new \DateTime($request['due_date']);
+        $now = new \DateTime();
+        $days = date_diff($due_date, $now);
+        $woman->days = $days->days;
+        $woman->rate = 30;
+        $woman->save();
+        return(
+            "Success"
+        );
 
     }
 }
