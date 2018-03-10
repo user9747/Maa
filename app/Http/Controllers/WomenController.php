@@ -9,6 +9,11 @@ use App\women;
 class WomenController extends Controller
 {
     //
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index(){
         return view('home');
     }
@@ -19,7 +24,6 @@ class WomenController extends Controller
             'date_of_birth' => 'required',
             'due_date' => 'required'
         ]);
-        
         $woman = new women;
         $user = Auth::user();
         $woman->email = $user->email;
@@ -31,11 +35,27 @@ class WomenController extends Controller
         $now = new \DateTime();
         $days = date_diff($due_date, $now);
         $woman->days = $days->days;
-        $woman->rate = 30;
-        $woman->save();
-        return(
-            "Success"
-        );
+        if(($days->days<=252) && ($days->days > 84)){
+          $stage=1;
+          $rate = 30;
+        }
+        elseif (($days->days <= 84) && ($days->days >28))
+        {
+          $stage = 2;
+          $rate = 15;
+        }
+        else {
+          $stage = 3;
+          $rate = 7;
+        }
 
+        $woman->rate = $rate;
+        $woman->save();
+        return redirect("wdashboard");
+    }
+
+    public function dashboard(){
+        $woman = women::where('email','=',Auth::user()->email)->first();
+        return view("women_dashboard")->with('woman',$woman);
     }
 }
