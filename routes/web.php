@@ -52,3 +52,5 @@ Route::get('/reminder','ReminderController@index');
 Route::get('/reminder/create', 'ReminderController@create');
 Route::post('/reminder/create', 'ReminderController@store')->name('create_reminder');
 Route::get('/reminder/{post}','ReminderController@show');
+
+Route::get('/advice','HomeController@advice');
