@@ -22,3 +22,4 @@ Route::get('/women_details', function () {
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/stream', 'HomeController@index')->name('stream');
+Route::post('/women_update','WomenController@update')->name('stream');
