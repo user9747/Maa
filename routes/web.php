@@ -24,3 +24,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/stream', 'HomeController@index')->name('stream');
 Route::post('/women_update','WomenController@update')->name('stream');
 Route::get('/wdashboard', 'WomenController@dashboard')->name('wdashboard');
+Route::get('/forum','PostController@index')->name('forum');
+Route::get('/forum/create', 'PostController@create');
+Route::post('/forum/create', 'PostController@store')->name('create_post');
+Route::get('/forum/{post}','PostController@show');

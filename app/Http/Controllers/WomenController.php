@@ -43,6 +43,7 @@ class WomenController extends Controller
     }
     public function dashboard(){
         $woman = women::where('email','=',Auth::user()->email)->first();
+        
         return view("women_dashboard")->with('woman',$woman);
     }
 }
