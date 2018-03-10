@@ -29,6 +29,7 @@ body{
 	background-color: white;
 
 }
+
 @media (max-width: 1025px) {
 	.navbar{
 		height: 110px;

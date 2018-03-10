@@ -1,10 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<link rel='stylesheet' href={{URL::to('css/posts.css')}}>
+<div class="container postc">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-        <h1>Meetup</h1>
+        @include('navwoman')
+
+        <div class="col-md-8 col-md-offset-1 postarea col-sm-8 col-xs-8">
+        <h1 class="forh">Meetup</h1>
             @if(count($meetups) > 0)
                 @foreach($meetups as $meetup)
                     <div class = "well">
