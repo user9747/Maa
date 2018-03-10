@@ -12,6 +12,6 @@
 <h1>{{$post->title}}</h1>
 <p>{!!$post->post_description!!}</p>
 <br>
-<h1>Add comment section here</h1>
+<h4>Add comment section here</h4>
 </div></div>
 @endsection()

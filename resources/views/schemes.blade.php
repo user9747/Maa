@@ -1,8 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<link rel='stylesheet' href={{URL::to('css/posts.css')}}>
+<div class="container postc">
     <div class="row">
+     @include('navwoman')
         <div class="col-md-8 col-md-offset-2">
         <h1>Scheme</h1>
             @if(count($schemes) > 0)
