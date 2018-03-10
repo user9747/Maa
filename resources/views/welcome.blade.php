@@ -5,7 +5,9 @@
 @section('content')
 <link rel='stylesheet' href={{URL::to('css/style1.css')}}>
 
-
+<div class="row full">
+    <div class="col-md-6"></div>
+    <div class="col-md-6">
 
 <div class="container-fluid">
     <div class="jumbotron text-center">
@@ -15,6 +17,8 @@
 		<a href="signup">  <button type="button" class="bton">Sign Up</button></a><br>
 		<a href="signin">  <button type="button" class="bton">Sign In</button></a>
 	</div>
+</div>
+</div>
 </div>
 
 

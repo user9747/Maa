@@ -20,9 +20,8 @@ body{
 }
 .jumbotron{
 	background-color:white;
-	margin-left:300px;
-	margin-right: 300px;
-	margin-top:50px;
+	
+	margin-top:20px;
 }
 .logop{
 	height:50vh;margin: auto;
@@ -32,4 +31,8 @@ body{
 	font-size:40px;
 	font-weight:1000;
 	color:#816a77;
+}
+.full{
+	max-width: 100%;
+
 }
