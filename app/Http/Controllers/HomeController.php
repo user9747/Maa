@@ -37,9 +37,5 @@ class HomeController extends Controller
         else
         return view('home');
     }
-    public function scheme(){
-      $schemes = scheme::orderBy('created_at','desc')->paginate(10);
-      return view('schemes')->with('schemes',$schemes);
-
-    }
+    
 }
