@@ -20,12 +20,19 @@
                     <h3 class="theday">{{ (int)((280-$woman->days)/7 + 1) }}</h3>
                 </div>
             </div>
-               <div class="col-md-6">
+               <div class="col-md-9">
              <div class="cardo">
                 @if($week){
               <p>{{ $week->body }}</p>  
                  }
                  @endif
+             </div>
+            </div></div><div class="row">
+             <div class="col-md-3">
+             <div class="cardo" style="margin-top: 20px;">
+                   You have
+                  <h3 class="theday1">{{ $woman->days }}</h3>to go
+                 
              </div>
             </div>
         </div>

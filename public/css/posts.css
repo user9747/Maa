@@ -54,6 +54,16 @@ font-family:'Berkshire Swash';
 	line-height: 90px;
 
 }
+.theday1{
+	font-family:'Berkshire Swash';
+	color:#0e7f76;
+	font-size:100px;
+	font-weight:400;
+	margin-top: 0px;
+	line-height: 90px;
+
+
+}
 
 @media (max-width: 480px) {
 	.forh{
