@@ -24,7 +24,6 @@ class PostController extends Controller
     {
         $post = post::where('post_id','=',$id)->first();
         $comments = postComments::where('p_id','=',$post->post_id)->orderBy('created_at')->get();
-        
         return view('posts.post')->with('post',$post)->with('postcomments',$comments);
     }
     public function create(){
@@ -49,7 +48,7 @@ class PostController extends Controller
         $this->validate($request, [
             'comment' => 'required',
         ]);
-        $comment = new posComment;
+        $comment = new postComments;
         $comment->user_id = Auth::user()->id;
         $comment->p_id = $request['postid'];
         $comment->user_comment = $request['comment'];

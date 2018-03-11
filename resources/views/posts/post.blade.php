@@ -43,7 +43,7 @@
         <div class="col-md-8 col-xs-8">
             @foreach($postcomments as $comment)
                 <p>{{$comment->user_comment}}</p><br>
-                <small>{{$comment->user_id->name}} on {{$comment->created_at}}</small>
+                <small>{{$comment->user->name}} on {{$comment->created_at}}</small>
             @endforeach
         </div>       
     </div>     

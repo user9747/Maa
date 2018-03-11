@@ -10,5 +10,4 @@
 <h1>{{$scheme->title}}</h1>
 <p>{!!$scheme->data!!}</p>
 <br>
-<h1>Add comment section here</h1>
 @endsection
