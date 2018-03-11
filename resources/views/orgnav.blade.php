@@ -4,9 +4,6 @@
         <ul style="list-style-type: none;" class="sidenav">
         <li><i class="fa fa-archive" aria-hidden="true"></i>&nbsp &nbsp<a href="/home">Dashboard</a></li>
       <li><i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp &nbsp<a href="/forum">Forum</a></li>
-      @if(Auth::user()->usertype=="woman")
-  <li><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp &nbsp<a href="/reminder">Reminder</a></li>
-<li><i class="fa fa-users" aria-hidden="true"></i>&nbsp &nbsp<a href="/meetup">Meetup</a></li>
-<li><i class="fa fa-female" aria-hidden="true"></i>&nbsp &nbsp<a href="/scheme">Welfare Schemes</a></li></ul>
-@endif
+ <li><i class="fa fa-users" aria-hidden="true"></i>&nbsp &nbsp<a href="/meetup/create">Meetup</a></li>
+<li><i class="fa fa-female" aria-hidden="true"></i>&nbsp &nbsp<a href="/scheme/create">Welfare Schemes</a></li></ul>
 </div>

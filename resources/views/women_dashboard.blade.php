@@ -6,13 +6,9 @@
 <link rel='stylesheet' href={{URL::to('css/posts.css')}}>
 <div class="container postc">
     <div class="row">
-    @if(Auth::user()->usertype == "woman")
+   
      @include('navwoman')
-     @elseif(auth()->user->usertype == "org")
-
-     @else
-
-     @endif
+    
        <div class="col-md-8 col-md-offset-1 postarea col-sm-8 col-xs-8">
 
 

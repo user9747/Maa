@@ -36,4 +36,7 @@
 	.sidenav li{
 		font-size:14px;
 	}
+	.sidenav li{
+		padding-left: 20px;
+	}
 }

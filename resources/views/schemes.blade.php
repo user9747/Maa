@@ -5,7 +5,7 @@
 <div class="container postc">
     <div class="row">
      @include('navwoman')
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-7 col-md-offset-2" >
         <h1>Scheme</h1>
             @if(count($schemes) > 0)
                 @foreach($schemes as $scheme)
@@ -18,7 +18,7 @@
                         </div>
                     </div>
                 @endforeach
-                {{$schemes->links()}}
+                {{ $schemes->links() }}
             @else
                 <p>No schemes found</p>
             @endif

@@ -41,11 +41,11 @@ class MeetUpController extends Controller
             'venue'=>'required'
         ]);
         $meetup = new meetup;
-        $meetup->title = $request->title;
-        $meetup->body = $request->body;
-        $meetup->time = $request->time;
-        $meetup->date = $request->date;
-        $meetup->venue = $request->venue;
+        $meetup->title = $request['title'];
+        $meetup->body = $request['body'];
+        $meetup->time = $request['time'];
+        $meetup->date = $request['date'];
+        $meetup->venue = $request['venue'];
         $meetup->save();
 
         return redirect('/meetup')->with('success','MeetUp Created');

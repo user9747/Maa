@@ -9,7 +9,7 @@
         
             <a class="btn btn-success pull-right" href="/reminder/create" style="margin-top: 20px;">Add Reminder</a>
       
-    <div class="row">
+    
         <div class="col-md-8 col-md-offset-2">
         <h1>Reminders</h1>
 

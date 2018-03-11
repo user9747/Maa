@@ -14,6 +14,7 @@ class SchemeController extends Controller
     //
     public function scheme(){
       $schemes = scheme::orderBy('created_at','desc')->paginate(10);
+     // return $schemes;
       return view('schemes')->with('schemes',$schemes);
     }
     public function store(Request $request){

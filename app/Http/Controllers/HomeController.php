@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\User;
 use App\women;
 use App\scheme;
-use App\advice;
 use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
@@ -30,25 +29,27 @@ class HomeController extends Controller
     {
         $currentUser = Auth::user();
         $womanUser = women::where('email' ,'=' , $currentUser->email)->first();
-        if($currentUser->usertype == "woman"){
+        if($currentUser->usertype == "woman")
             if($womanUser == null)
                 return redirect("women_details");
             else
                 return redirect("wdashboard");
-        }elseif ($currentUser->usertype == "org") {
+        elseif ($currentUser->usertype == "org") {
            return redirect("orgdashboard");
         }
         elseif($currentUser->usertype == "doctor"){
-          return redirect("docterdashboard");
+          return redirect("doctordashboard");
         }
         else
         return view('home');
     }
-    public function advice(){
-        $dos = advice::where('flag','=','0')->get();
-        $donts = advice::where('flag','=','1')->get();
-        return view('advice')->with('dos',$dos)->with('donts',$donts);
-
+    public function org()
+    {
+        return view('organisation');
+    }
+     public function doctor()
+    {
+        return view('doctordashboard');
     }
 
 }
