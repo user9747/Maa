@@ -55,10 +55,7 @@ Route::post('/reminder/create', 'ReminderController@store')->name('create_remind
 Route::get('/reminder/{post}','ReminderController@show');
 
 Route::get('/advice','HomeController@advice');
-<<<<<<< 2386f22201455ad112b1b8f7630119a1c59fd3a8
 Route::get('/orgdashboard','HomeController@org')->name('orgdashboard');
 Route::get('/doctordashboard','HomeController@doctor')->name('doctordashboard');
-=======
 
 Route::get('/live','HomeController@live');
->>>>>>> Added Live Video and Started Comment

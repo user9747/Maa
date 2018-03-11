@@ -24,7 +24,7 @@ class PostController extends Controller
     {
         $post = post::where('post_id','=',$id)->first();
         $comments = postComments::where('p_id','=',$post->post_id)->orderBy('created_at')->get();
-        return $comments;
+        
         return view('posts.post')->with('post',$post)->with('postcomments',$comments);
     }
     public function create(){
