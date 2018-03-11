@@ -5,8 +5,8 @@
 <div class="container postc">
     <div class="row">
      @include('navwoman')
-        <div class="col-md-7 col-md-offset-2" >
-        <h1>Scheme</h1>
+        <div class="col-md-7 col-md-offset-2 postarea" >
+        <h1 class="forh">Scheme</h1>
             @if(count($schemes) > 0)
                 @foreach($schemes as $scheme)
                     <div class = "well">

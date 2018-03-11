@@ -21,11 +21,10 @@
                 </div>
             </div>
                <div class="col-md-9">
-             <div class="cardo">
-                @if($week){
+             <div class="cardo" style="padding: 12px;">
+                <h3 class="theday2">Advice for the week</h3>
               <p>{{ $week->body }}</p>  
-                 }
-                 @endif
+                
              </div>
             </div></div><div class="row">
              <div class="col-md-3">
@@ -35,6 +34,9 @@
                  
              </div>
             </div>
+            <div class="col-md-3">
+             <button class="btn btn-primary live" ><a href="/live">Live Talks</a></button>
+     <button class="btn btn-primary advice"><a href="/advice">Advice</a></button></div>
         </div>
                
              
@@ -65,5 +67,6 @@
 
         </div>
     </div>
+
 </div>
 @endsection

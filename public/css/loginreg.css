@@ -55,6 +55,9 @@ body{
 .box{
 	margin-top: 20px;
 }
+.tab-content{
+	font-size: 15px;
+}
 @media (max-width: 480px) {
 	.momm{
 		margin-top: 20px;

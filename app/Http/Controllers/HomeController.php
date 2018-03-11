@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\women;
 use App\scheme;
+use App\advice;
 use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
@@ -53,6 +54,11 @@ class HomeController extends Controller
     }
     public function live(){
         return view('live');
+    }
+    public function advice(){
+        $dos = advice::where('flag','=',0)->get();
+        $donts = advice::where('flag','=',1)->get();
+        return view('advice')->with('dos',$dos)->with('donts',$donts);
     }
 
 }
