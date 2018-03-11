@@ -4,13 +4,16 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class post extends Model
+class postComments extends Model
 {
     //
+    protected $table = 'post_comments';
+
+    public function post(){
+        return $this->belongsTo('App\post');
+    }
+
     public function user(){
         return $this->belongsTo('App\User');
-    }
-    public function postcomments(){
-        return $this->hasMany('App\postComments');
     }
 }

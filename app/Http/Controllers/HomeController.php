@@ -51,5 +51,8 @@ class HomeController extends Controller
     {
         return view('doctordashboard');
     }
+    public function live(){
+        return view('live');
+    }
 
 }

@@ -32,6 +32,7 @@ Route::get('/forum','PostController@index')->name('forum');
 Route::get('/forum/create', 'PostController@create');
 Route::post('/forum/create', 'PostController@store')->name('create_post');
 Route::get('/forum/{post}','PostController@show');
+Route::post('/forum/comment','PostController@comment')->name('create_post_comment');
 
 Route::get('/scheme','SchemeController@scheme');
 Route::get('/scheme/create', function () {
@@ -54,5 +55,10 @@ Route::post('/reminder/create', 'ReminderController@store')->name('create_remind
 Route::get('/reminder/{post}','ReminderController@show');
 
 Route::get('/advice','HomeController@advice');
+<<<<<<< 2386f22201455ad112b1b8f7630119a1c59fd3a8
 Route::get('/orgdashboard','HomeController@org')->name('orgdashboard');
 Route::get('/doctordashboard','HomeController@doctor')->name('doctordashboard');
+=======
+
+Route::get('/live','HomeController@live');
+>>>>>>> Added Live Video and Started Comment

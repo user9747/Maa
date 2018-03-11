@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\post;
+use App\postComments;
 use Auth;
 
 
@@ -22,7 +23,8 @@ class PostController extends Controller
     public function show($id)
     {
         $post = post::where('post_id','=',$id)->first();
-        return view('posts.post')->with('post',$post);
+        $comments = postComments::where('p_id','=',$post->post_id)->orderBy('created_at')->get();
+        return view('posts.post')->with('post',$post)->with('postcomments',$comments);
     }
     public function create(){
         return view('posts.create');
@@ -41,5 +43,17 @@ class PostController extends Controller
 
         return redirect('/forum')->with('success','Post Created');
 
+    }
+    public function comment(Request $request){
+        $this->validate($request, [
+            'comment' => 'required',
+        ]);
+        $comment = new posComment;
+        $comment->user_id = Auth::user()->id;
+        $comment->p_id = $request['postid'];
+        $comment->user_comment = $request['comment'];
+        $comment->save();
+
+        return redirect('/forum/'.$comment->p_id);
     }
 }
