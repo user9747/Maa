@@ -52,6 +52,7 @@
 
              <div class="btn btn-primary live" ><a href="/live">Live Talks</a></div>
              <div class="btn btn-primary advice"><a href="/advice">Advice</a></div>
+             <div class="btn btn-primary"><a href="/emcont">Add Emergency Contact</a></div>
             </div>
         </div>
                

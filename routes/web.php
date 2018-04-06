@@ -61,3 +61,7 @@ Route::get('/doctordashboard','HomeController@doctor')->name('doctordashboard');
 Route::get('/live','HomeController@live');
 
 Route::get('/sos','WomenController@sos');
+Route::get('/emcont',function(){
+    return view('emergency_contact');
+});
+Route::post('/contactUpdate','WomenController@addContact')->name('contact_update');

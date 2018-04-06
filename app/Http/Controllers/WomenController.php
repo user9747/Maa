@@ -81,4 +81,15 @@ class WomenController extends Controller
         }
         return redirect('/home');
     }
+    public function addContact(Request $request){
+        $this->validate($request,[
+            'email' => 'required'
+        ]);
+        $woman = women::where('email','=',Auth::user()->email)->first();
+        $contact = new Emergency;
+        $contact->woman_id = $woman->user_id;
+        $contact->contact = $request['email'];
+        $contact->save();
+        return redirect('/home');
+    }
 }
