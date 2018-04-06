@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSizesTable extends Migration
+class AddSizeToWeek extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,10 @@ class CreateSizesTable extends Migration
      */
     public function up()
     {
-        Schema::create('sizes', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('week');
+        //
+        Schema::table('weekmsgs',function($table){
             $table->string('size');
             $table->string('image');
-            $table->timestamps();
         });
     }
 
@@ -29,6 +27,10 @@ class CreateSizesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sizes');
+        //
+        Schema::table('weekmsgs',function($table){
+            $table->dropColumn('size');
+            $table->dropColumn('image');
+        });
     }
 }
