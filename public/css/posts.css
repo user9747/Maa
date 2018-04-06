@@ -1,0 +1,135 @@
+.btn{
+	background-color: #ffbcb1;
+	
+	border-width: 0px;
+	font-family:'Berkshire Swash';
+	color:#816a77;
+}
+.forh{
+	font-weight:400;
+	font-family:'Berkshire Swash';
+	color:#816a77;
+	font-size:50px;
+}
+.well{
+	font-family:'Berkshire Swash';
+	color:black;
+
+}
+.well a{
+	color:#816a77;
+	text-decoration: none;
+}
+.postarea{
+	margin-top: 20px;
+}
+.postarea h1{
+font-family:'Berkshire Swash';
+	color:#816a77;
+	font-size:30px;
+}
+.postarea p{
+	font-family:'Berkshire Swash';
+	color:#816a77;
+	font-size:20px;
+}
+.cardo{
+	font-family:'Berkshire Swash';
+	color:#816a77;
+	font-size:20px;
+	background-color: white;
+	border-radius: 4px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+.theday{
+	font-family:'Berkshire Swash';
+	color:#0e7f76;
+	font-size:120px;
+	font-weight:400;
+	margin-top: 0px;
+	line-height: 90px;
+
+}
+.theday1{
+	font-family:'Berkshire Swash';
+	color:#0e7f76;
+	font-size:100px;
+	font-weight:400;
+	margin-top: 0px;
+	line-height: 90px;
+
+
+}
+.theday2{
+	font-family:'Berkshire Swash';
+	color:#0e7f76;
+	font-size:40px;
+	font-weight:400;
+	margin-top: 0px;
+	line-height: 90px;
+	
+
+
+}
+.live{
+	 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	 padding: 10px;
+	  background-color: #2E86C1;
+	 margin-top: 30px;
+	 border-width: 0px;
+	  color:white;
+	  font-family:'Berkshire Swash';
+	  font-weight:400;
+
+}
+.advice{
+	 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	  padding: 10px;
+	  background-color:#FF5733;
+	  margin-top: 30px;
+	  border-width: 0px;
+	  color:white;
+	  font-family:'Berkshire Swash';
+	  font-weight:400;
+
+}
+.advice a{
+	color:white;
+	text-decoration: none;
+}
+.live a{
+	color:white;
+	text-decoration: none;
+}
+@media (max-width: 480px) {
+	.forh{
+font-size:20px;
+}
+.poss{
+	font-size:20px;
+}
+.well{
+	font-size: 14px;
+}
+.postarea h1{
+font-family:'Berkshire Swash';
+	color:#816a77;
+	font-size:20px;
+}
+.postarea p{
+	font-family:'Berkshire Swash';
+	color:#816a77;
+	font-size:15px;
+}
+}
+
+
+
+
+
+
+

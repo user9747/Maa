@@ -1,0 +1,80 @@
+body{
+	font-size: unset;
+}
+.form-control{
+	border-radius: 0px;
+	border-width: 1px;
+}
+.form-group{
+	font-weight:400;
+	font-family:'Berkshire Swash';
+	color:#816a77;
+	font-size:15px;
+}
+.btn{
+	background-color: #ffbcb1;
+	color:#816a77;
+	border-width: 0px;
+}
+.panel-heading{
+	font-weight:400;
+	font-family:'Berkshire Swash';
+    font-size:25px;
+}
+.panel-default>.panel-heading {
+    color:#816a77;
+}
+.momm{
+	margin: auto;
+	width:70%;
+	margin-top: 30px;
+}
+.mrmm{
+	margin: auto;
+	width:70%;
+	margin-top: 50px;
+
+}
+.posttext{
+	width:80%;
+}
+.control-label{
+	font-weight:400;
+	font-family:'Berkshire Swash';
+    font-size:15px;
+
+}
+.yogapic{
+	height:40vh;
+	margin: auto;
+	margin-top: 40px;
+}
+.postarea{
+	padding-left:50px;
+}
+.box{
+	margin-top: 20px;
+}
+.tab-content{
+	font-size: 15px;
+}
+@media (max-width: 480px) {
+	.momm{
+		margin-top: 20px;
+		width:50%;
+	}
+	.mrmm{margin: auto;
+	width:50%;
+	margin-top: 20px;
+}
+.posttext{
+	width:80%;
+	
+}
+.postarea{
+	padding-left: 40px;
+}
+.yogapic{
+	display: none;
+	}
+}
