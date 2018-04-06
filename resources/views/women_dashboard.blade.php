@@ -9,31 +9,45 @@
    
      @include('navwoman')
     
-       <div class="col-md-8 col-md-offset-1 postarea col-sm-8 col-xs-8">
+       <div class="col-md-8 col-md-offset-1 postarea col-sm-8 col-xs-8 cardo">
 
 
              <div class="row">
-                <div class="col-md-3">
-             <div class="cardo">
-          
-                    You're on<br> your week
-                    <h3 class="theday">{{ (int)((280-$woman->days)/7 + 1) }}</h3>
-                </div>
+               
+               <div class="col-md-12">
+                
+         
+                    Your baby is of the size of a {{$week->size}}!
+                     <img src="img/{{$week->image}}" height="40px">
+                   <hr> 
+               </div>
+               
+
+            <div class="col-md-12">
+             
+                    You're on<br> week &nbsp
+                    <span class="theday">{{ (int)((280-$woman->days)/7 + 1) }} </span>&nbsp|&nbsp
+                        <!--</h3>
+                <h3 class="theday1">--> <span class="theday">{{ $woman->days }}</span>&nbsp days to go
+                 
+             
             </div>
-               <div class="col-md-9">
-             <div class="cardo" style="padding: 12px;">
+
+            </div>
+            <hr>
+            <div class="row">
+                 <div class="col-md-12">
+            
                 <h3 class="theday2">Advice for the week</h3>
               <p>{{ $week->body }}</p>  
                 
-             </div>
-            </div></div><div class="row">
-             <div class="col-md-3">
-             <div class="cardo" style="margin-top: 20px;">
-                   You have
-                  <h3 class="theday1">{{ $woman->days }}</h3>to go
-                 
-             </div>
-            </div>
+            
+            </div></div>
+
+          
+
+            <div class="row">
+            
             <div class="col-md-3">
 
              <div class="btn btn-primary live" ><a href="/live">Live Talks</a></div>
