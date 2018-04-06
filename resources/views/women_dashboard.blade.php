@@ -35,8 +35,10 @@
              </div>
             </div>
             <div class="col-md-3">
-             <button class="btn btn-primary live" ><a href="/live">Live Talks</a></button>
-     <button class="btn btn-primary advice"><a href="/advice">Advice</a></button></div>
+
+             <div class="btn btn-primary live" ><a href="/live">Live Talks</a></div>
+             <div class="btn btn-primary advice"><a href="/advice">Advice</a></div>
+            </div>
         </div>
                
              
@@ -63,9 +65,15 @@
                 <li>{{ $woman->user_id }}</li>
                 <li>{{ $woman->email }}</li>
                 <li>{{ $woman->days }}</li>
+<<<<<<< HEAD
            </ul> -->
 
         </div>
+=======
+           </ul> 
+
+        </div>-->
+>>>>>>> 1625d0c4c442fb245f4643d88b0a19036d264ad4
     </div>
 
 </div>
