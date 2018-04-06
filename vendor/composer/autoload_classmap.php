@@ -35,6 +35,7 @@ return array(
     'App\\Reminder' => $baseDir . '/app/Reminder.php',
     'App\\User' => $baseDir . '/app/User.php',
     'App\\advice' => $baseDir . '/app/advice.php',
+    'App\\emergency' => $baseDir . '/app/emergency.php',
     'App\\meetUp' => $baseDir . '/app/meetUp.php',
     'App\\post' => $baseDir . '/app/post.php',
     'App\\postComments' => $baseDir . '/app/postComments.php',

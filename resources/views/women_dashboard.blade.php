@@ -83,6 +83,11 @@
 
         </div>-->
     </div>
+    <div>
+        <a href="/sos" class="float">
+        <img src="img/sos.png" style="height:40px; margin-top:10px;">
+        </a>
+    </div>
 
 </div>
 @endsection

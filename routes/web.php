@@ -59,3 +59,5 @@ Route::get('/orgdashboard','HomeController@org')->name('orgdashboard');
 Route::get('/doctordashboard','HomeController@doctor')->name('doctordashboard');
 
 Route::get('/live','HomeController@live');
+
+Route::get('/sos','WomenController@sos');

@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Auth;
 use App\women;
 use App\weekmsg;
+use App\Emergency;
+use GuzzleHttp\Client;
 
 class WomenController extends Controller
 {
@@ -61,5 +63,22 @@ class WomenController extends Controller
 
         $week = weekmsg::where('week','=',40-(int)($woman->days/7))->first();
         return view("women_dashboard")->with('woman',$woman)->with('week',$week);
+    }
+
+    public function sos(){
+        $woman = women::where('email','=',Auth::user()->email)->first();
+        $contacts = Emergency::where('woman_id','=',$woman->user_id)->get();
+        foreach($contacts as $contact){
+            $client = new Client();
+            $title = "SOS";
+            $mail = $contact->contact;
+            $res = $client->request('POST', 'http://localhost:3000/sos', [
+                'form_params' => [
+                    'title' => $title,
+                    'email' => $mail
+                ]
+            ]);
+        }
+        return redirect('/home');
     }
 }
