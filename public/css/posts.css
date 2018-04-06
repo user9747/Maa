@@ -84,8 +84,12 @@ font-family:'Berkshire Swash';
 	  color:white;
 	  font-family:'Berkshire Swash';
 	  font-weight:400;
-
 }
+.dr{
+	margin-bottom: 20px;
+}
+
+
 .advice{
 	 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 	  padding: 10px;

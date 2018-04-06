@@ -10,6 +10,7 @@ class ReminderController extends Controller
 {
     //
     public function index(){
+       // $reminders = Reminder::where('user_id','=',Auth::user()->id)->get();
         $reminders = Auth::user()->reminder;
         return view('reminder.index')->with('reminders',$reminders);
     }

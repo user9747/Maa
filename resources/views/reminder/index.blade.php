@@ -10,19 +10,18 @@
             <a class="btn btn-success pull-right" href="/reminder/create" style="margin-top: 20px;">Add Reminder</a>
       
     
-        <div class="col-md-8 col-md-offset-2 postarea">
-        <h1 class="forh">Reminders</h1>
+        <div class="col-md-6 col-md-offset-2">
+        <h1>Reminders</h1>
 
              <div class="row">
                
             @if(count($reminders) > 0)
                 @foreach($reminders as $reminder)
-                 <div class="col-md-3 cardo">
+                 <div class="col-md-9 cardo dr">
                    
-                                <h1><a href="/reminder/{{$reminder->id}}">{{$reminder->title}}</a></h1>
+                 <h1><a href="/reminder/{{$reminder->id}}">{{$reminder->title}}</a></h1>
                                
-                            </div>       
-                       
+                </div>       
                 @endforeach
             @else
                 <p>No reminders found</p>
