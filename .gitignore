@@ -19,7 +19,4 @@ app/Http/Controllers/youtubeController.php
 resources/views/welcome.blade.php
 resources/views/myvideo.blade.php
 composer.json
-composer.json
-composer.lock
-composer.json
 composer.lock
