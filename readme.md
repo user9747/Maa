@@ -54,6 +54,12 @@ Pregnant women face a lot of difficulties from health related problems to mental
 * ### Reminders
 ![reminders](https://github.com/user9747/Maa/blob/master/screenshots/10.png)
 
+## Contributors
+* [Abhishek Nambiar](https://github.com/abhisheknambiar98)
+* [Albin Antony](https://github.com/user9747)
+* [Divya Moncy](https://github.com/divyamoncy)
+* [Gopal M](https://github.com/Gopal9816)
+* Swathi Mohan
 
 
 
