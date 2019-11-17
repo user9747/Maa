@@ -5,7 +5,7 @@ A venture to help all the moms out there
 Pregnant women face a lot of difficulties from health related problems to mental stress. Most of the time, they don't know what to do. What women tend to do is go on the internet and try things that are really not safe. Most of this information is not validated. So we have come up with an app, a companion app for all the women out there. This is **Project Maa**.
 
 ## Key features
-* Threee different logins for women, doctors and non-governmental organisations
+* Three different logins for women, doctors and non-governmental organisations
 * Meetups can be organised by NGOs and Doctors
 * The app has a dashboard that shows lots of information regarding the health of the woman and baby, such as expected due date, required weight etc.
 * Tips based on the week of pregnancy in which the woman is in, for her and her baby's health.
